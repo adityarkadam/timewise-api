@@ -5,8 +5,8 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from IPython.display import YouTubeVideo
 from PIL import Image
 from pydantic import BaseModel
-import uvicorn
-from app import app 
+# import uvicorn
+# from app import app 
 
 
 
