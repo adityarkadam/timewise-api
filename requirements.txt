@@ -1,0 +1,6 @@
+fastapi
+transformers
+youtube_transcript_api
+ipython
+Pillow
+pydantic
