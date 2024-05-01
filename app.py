@@ -5,9 +5,10 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from IPython.display import YouTubeVideo
 from PIL import Image
 from pydantic import BaseModel
-import pickle
-import json
-import io
+import uvicorn
+from app import app 
+import os
+
 
 
 app= FastAPI()
@@ -97,4 +98,5 @@ def ingredient_extraction(input_parameters :model_input):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+        uvicorn.run("main:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+
